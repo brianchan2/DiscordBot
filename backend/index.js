@@ -1,7 +1,6 @@
 import axios from 'axios'
 import Server from './server.js'
 import Sql from './sql.js'
-import mssql from 'mssql'
 
 const server = new Server()
 server.create()
@@ -28,4 +27,5 @@ axios({
 
 const sql = new Sql()
 await sql.connect()
-sql.create()
+// sql.create()
+// sql.cleanup()
