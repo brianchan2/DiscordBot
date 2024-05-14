@@ -1,0 +1,6 @@
+FROM node:alpine
+ADD ./ ./app
+WORKDIR /app
+RUN npm i -g pnpm
+RUN pnpm i
+CMD node index.js
